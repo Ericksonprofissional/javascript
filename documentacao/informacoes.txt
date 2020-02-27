@@ -1,0 +1,12 @@
+<script></script>: Dentro de uma pagina HTML a tag <script> é onde será eja interpretado os códigos javascritp;
+alert("informação"): alert é uma função que exibe um pop up na tela do usuário com a "informação" que deseja;
+console.lo("informação"): console.log uma chamada que mostra uma "informação" mas restrita onde apenas pessoas que conhece o console do desenvolvedor;
+document: serve como ponto de entrada de toda pagina com todas as informções dos elementos e tag do HTML DOM;
+document.querySelector(): Busca pequeinas partes do "document" para ser manipulada ou consultada;
+document.querySelector("h1").innerText: Mostra o valor ou a informação que existe na tag <h1>;
+document.querySelector("h1").textContent: Mostra o valor ou a informação que existe na tag <h1>;
+var: iniando uma variavel que recebe uma informção que pode ser manipulada ou alterada;
+var titulo: uma variavel que recebe uma informção que pode ser manipulada ou alterada;
+titulo.textContent = "informação" ou titulo.innerText = "informação": é atribuido novas informações a variavel;
+class="titulo" ou id="titulo": seletor CSS qua ajuda identificar e selecioanr o elemento document.querySelector(".titulo") ou document.querySelector("#titulo");
+<script src="js/index.js">: src mostra de onde será carregado o codigo JS
