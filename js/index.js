@@ -34,3 +34,9 @@ for(var i = 0;i < pacientes.length;i++){
         tdImc.innerHTML = imc.toFixed(2);
     }
 }
+
+var adicionar = document.querySelector("#adicionar-paciente");
+
+adicionar.addEventListener("click", function() {
+    console.log("Ola fui clicado!");
+});
