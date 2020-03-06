@@ -51,3 +51,7 @@ function msg() {
 var site = titulo.innerText;
    alert("Bem vindo ao site " + site);
 }
+
+function calculaImc(peso, altura) {
+    return (peso / (altura * altura)).toFixed(2);
+}
