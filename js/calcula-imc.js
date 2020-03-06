@@ -30,8 +30,8 @@ for (var i = 0; i < pacientes.length; i++) {
     }
 
     if (alturaEhValida && pesoEhValido) {
-        var imc = peso / (altura * altura);
-        tdImc.innerHTML = imc.toFixed(2);
+        var imc = calculaImc(peso, altura);
+        tdImc.innerHTML = imc;
     }
 }
 
@@ -41,4 +41,8 @@ titulo.addEventListener("click", msg);
 function msg() {
 var site = titulo.innerText;
    alert("Bem vindo ao site " + site);
+}
+
+function calculaImc(peso, altura) {
+    return (peso / (altura * altura)).toFixed(2);
 }
