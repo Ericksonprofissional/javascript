@@ -144,3 +144,7 @@ button[disabled=disabled], button:disabled {
 .campo-obrigatorio {
 	border: #0c8cd3 solid 2px;
 }
+.fadeOut {
+	opacity: 0;
+	transition: 1s;
+}

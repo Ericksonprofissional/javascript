@@ -21,8 +21,7 @@ adicionar.addEventListener("click", function (event) {
     tablePaciente.appendChild(pacienteTr);
     form.reset();
 
-    var mensageiro = document.querySelector(".mensagem-erro");
-    mensageiro.innerHTML = "";
+    document.querySelector(".mensagem-erro").innerHTML = "";
 });
 
 
