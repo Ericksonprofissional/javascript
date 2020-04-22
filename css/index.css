@@ -136,3 +136,15 @@ button[disabled=disabled], button:disabled {
 .campo-invalido{
 	border: 1px solid red;
 }
+
+.mensagem-erro {
+	color: red;
+}
+
+.campo-obrigatorio {
+	border: #0c8cd3 solid 2px;
+}
+.fadeOut {
+	opacity: 0;
+	transition: 1s;
+}
