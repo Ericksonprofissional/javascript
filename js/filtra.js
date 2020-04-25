@@ -7,7 +7,8 @@ filtrando.addEventListener("input",(el)=>{
     if(pesquisaNome.length > 0 ){
         pacientes.forEach(paciente => {
             let nomePaciente = paciente.querySelector(".info-nome").innerHTML;
-            pesquisaNome == nomePaciente ? paciente.classList.remove("invisivel") : paciente.classList.add("invisivel");
+            let expressao = new RegExp(pesquisaNome, "i")
+            expressao.test(nomePaciente) ? paciente.classList.remove("invisivel") : paciente.classList.add("invisivel");
         });
     }else{
         pacientes.forEach(paciente => { 
