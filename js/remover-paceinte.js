@@ -5,7 +5,7 @@ tabela.addEventListener("dblclick", function (event) {
 
     setTimeout(() => {
         event.target.parentNode.remove();
-        alert("Paciente " + tabela.querySelector(".info-nome").textContent + " foi removido");
+        alert("Paciente foi removido");
     }, 1100)
 
 });
