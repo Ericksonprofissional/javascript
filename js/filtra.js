@@ -14,6 +14,5 @@ filtrando.addEventListener("input",(el)=>{
         pacientes.forEach(paciente => { 
             paciente.classList.remove("invisivel");
         });
-    }
-    
+    }    
 })

@@ -6,23 +6,25 @@ adicionar.addEventListener("click", function (event) {
     var form = document.querySelector("#form-adiciona");
 
     var pacienteForm = obtemInformacoesForm(form);
-    console.log(pacienteForm)
-
-    var pacienteTr = montaTr(pacienteForm);
+    console.log(pacienteForm);
 
     var erros = validaPaciente(pacienteForm);
     if (erros.length > 0) {
         exibeMensagensErros(erros);
         return;
     }
-
-    var tablePaciente = document.querySelector("#tabela-pacientes");
-
-    tablePaciente.appendChild(pacienteTr);
+    adicionaPacienteTabela(pacienteForm);
+    
     form.reset();
 
     document.querySelector(".mensagem-erro").innerHTML = "";
 });
+
+function adicionaPacienteTabela(paciente){
+    var pacienteTr = montaTr(paciente);
+    var tablePaciente = document.querySelector("#tabela-pacientes");
+    tablePaciente.appendChild(pacienteTr);
+}
 
 
 function obtemInformacoesForm(form) {
