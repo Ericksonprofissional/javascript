@@ -8,21 +8,24 @@ adicionar.addEventListener("click", function (event) {
     var pacienteForm = obtemInformacoesForm(form);
     console.log(pacienteForm)
 
-    var pacienteTr = montaTr(pacienteForm);
+    adicionaPacienteTabela(pacienteForm);
 
     var erros = validaPaciente(pacienteForm);
     if (erros.length > 0) {
         exibeMensagensErros(erros);
         return;
     }
-
-    var tablePaciente = document.querySelector("#tabela-pacientes");
-
-    tablePaciente.appendChild(pacienteTr);
+        
     form.reset();
 
     document.querySelector(".mensagem-erro").innerHTML = "";
 });
+
+function adicionaPacienteTabela(paciente){
+    var pacienteTr = montaTr(paciente);
+    var tablePaciente = document.querySelector("#tabela-pacientes");
+    tablePaciente.appendChild(pacienteTr);
+}
 
 
 function obtemInformacoesForm(form) {
